@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagnóstico Completo — Modo Enem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sheet">
+
+  <header class="top">
+    <span class="brand">Modo Enem</span>
+    <span class="code" id="sheet-code">Diagnóstico completo</span>
+  </header>
+
+  <div class="stepper hidden" id="stepper">
+    <div class="step" data-step="quiz"><span class="step-dot">1</span><span class="step-label">Simulado</span></div>
+    <div class="step-line"></div>
+    <div class="step" data-step="redacao"><span class="step-dot">2</span><span class="step-label">Redação</span></div>
+    <div class="step-line"></div>
+    <div class="step" data-step="boletim"><span class="step-dot">3</span><span class="step-label">Resultado</span></div>
+  </div>
+
+  <!-- COVER -->
+  <section class="screen active" id="screen-cover">
+    <h1 class="title">Seu diagnóstico completo pro Enem, em um só lugar.</h1>
+    <p class="lede">Simulado adaptativo + correção da sua redação pelos critérios oficiais + um plano de ação pros dias que faltam. Tudo aqui, sem enrolação.</p>
+    <button class="begin-btn" id="begin-btn" onclick="startQuiz()" disabled>Começar diagnóstico</button>
+    <div class="hint"><span class="dot"></span><span id="hint-text">carregando perguntas…</span></div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="screen" id="screen-quiz">
+    <div class="progress-row">
+      <span class="area-label" id="area-label">Linguagens</span>
+      <div class="tiers" id="tier-pips">
+        <div class="tier-pip" data-tier="facil"></div>
+        <div class="tier-pip" data-tier="medio"></div>
+        <div class="tier-pip" data-tier="dificil"></div>
+      </div>
+    </div>
+    <p class="question-text" id="question-text"></p>
+    <div class="options" id="options"></div>
+    <div class="recalibrating" id="recalibrating">recalibrando nível de dificuldade…</div>
+  </section>
+
+  <!-- REDAÇÃO -->
+  <section class="screen" id="screen-redacao">
+    <h1 class="title" style="font-size:24px;">Agora sua redação.</h1>
+    <p class="lede">Cole abaixo (pode ser um rascunho ou uma redação já feita). A análise segue as 5 competências oficiais do Enem.</p>
+
+    <label class="field-label" for="tema-input">tema da redação (opcional)</label>
+    <input type="text" id="tema-input" placeholder="ex: desafios para a valorização de comunidades tradicionais no Brasil">
+
+    <label class="field-label" for="redacao-input">texto da redação</label>
+    <textarea id="redacao-input" placeholder="Cole aqui o texto completo da sua redação…"></textarea>
+    <div class="char-count" id="char-count">0 palavras</div>
+
+    <button class="begin-btn" id="analisar-btn" onclick="analisarRedacao()" disabled>Analisar redação</button>
+    <div class="hint"><span class="dot"></span><span>mínimo de 80 palavras pra análise fazer sentido</span></div>
+  </section>
+
+  <!-- BOLETIM -->
+  <section class="screen" id="screen-boletim">
+    <div class="boletim-head">
+      <span class="brand">boletim de desempenho</span>
+      <h1 class="title" style="margin-top:10px; font-size:24px;">Seu diagnóstico completo</h1>
+    </div>
+
+    <div class="section-label">simulado · desempenho por área</div>
+    <div id="results-areas"></div>
+
+    <div class="section-label">redação · nota estimada</div>
+    <div class="score-ring-wrap">
+      <svg class="score-ring" viewBox="0 0 120 120">
+        <circle class="score-ring-bg" cx="60" cy="60" r="54"></circle>
+        <circle class="score-ring-fill" id="score-ring-fill" cx="60" cy="60" r="54"></circle>
+      </svg>
+      <div class="score-ring-label">
+        <div class="score-total" id="redacao-total">0</div>
+        <div class="score-total-sub">/1000</div>
+      </div>
+    </div>
+    <p class="range-text" id="redacao-fonte" style="margin-bottom:18px;"></p>
+    <div id="results-competencias"></div>
+
+    <div class="section-label">plano de ação · próximos dias</div>
+    <div id="plano-acao"></div>
+
+    <p class="disclaimer">Estimativas baseadas em critérios do Enem (competências oficiais da redação e nível de dificuldade das questões do simulado) — não substituem a nota oficial nem uma correção humana especializada.</p>
+    <button class="cta" onclick="restart()">Refazer diagnóstico</button>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

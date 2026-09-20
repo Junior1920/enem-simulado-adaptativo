@@ -1,0 +1,244 @@
+{
+  "LC": {
+    "LC_Q1": [
+      {
+        "text": "Em uma charge, um personagem observa um rio poluído e diz: \"Que sorte a nossa, água encanada de graça.\" O efeito de humor da fala decorre de:",
+        "options": ["uma comparação direta entre dois rios distintos", "uma ironia entre o discurso de sorte e a realidade da poluição", "o uso de uma gíria regional pouco conhecida", "uma citação literal de um provérbio popular"],
+        "correct": 1
+      },
+      {
+        "text": "Em uma tirinha, um personagem observa sua conta de luz altíssima e comenta: \"Que economia de energia impecável, não é mesmo?\" O efeito de sentido dessa fala resulta de:",
+        "options": ["uma comparação entre duas contas de luz de meses diferentes", "uma ironia entre o elogio à economia e o valor alto da conta", "o uso de uma metáfora sobre consumo consciente", "uma citação direta de uma campanha publicitária"],
+        "correct": 1
+      },
+      {
+        "text": "Ao ver o trânsito parado por horas, um passageiro comenta: \"Que viagem rápida e tranquila!\" Esse comentário produz efeito de sentido irônico porque:",
+        "options": ["descreve fielmente a experiência vivida no trânsito", "contradiz, de forma proposital, a realidade da situação vivida", "usa uma gíria regional para se referir ao trânsito", "compara o trânsito atual com o de anos anteriores"],
+        "correct": 1
+      }
+    ],
+    "LC_Q2A": [
+      {
+        "text": "Um artigo de opinião defende que \"a linguagem não apenas descreve o mundo, mas também o constrói\". Essa afirmação se relaciona mais diretamente com a ideia de que:",
+        "options": ["as palavras têm poder performativo, capaz de moldar percepções sociais", "todo texto escrito é necessariamente mais confiável que a fala", "a gramática normativa deve ser seguida sem exceções", "a linguagem literária é superior à linguagem cotidiana"],
+        "correct": 0
+      },
+      {
+        "text": "Um linguista afirma que \"nomear algo é também decidir como esse algo será percebido socialmente\". Essa ideia dialoga diretamente com a noção de que:",
+        "options": ["a linguagem é neutra e apenas reflete uma realidade já dada", "escolhas lexicais podem orientar a forma como fatos são interpretados", "somente textos técnicos possuem poder de influência social", "a etimologia das palavras determina seu uso atual"],
+        "correct": 1
+      },
+      {
+        "text": "Em um debate, um participante evita o termo \"imigrante ilegal\" e opta por \"imigrante em situação irregular\". Essa escolha lexical evidencia que:",
+        "options": ["as duas expressões são sinônimas e não alteram a percepção do ouvinte", "a seleção vocabular pode suavizar ou intensificar julgamentos sobre um tema", "apenas expressões jurídicas podem ser usadas em debates públicos", "o uso de sinônimos é sempre uma tentativa de engano"],
+        "correct": 1
+      }
+    ],
+    "LC_Q2B": [
+      {
+        "text": "Na frase \"Ele chegou atrasado, mas ninguém notou\", a palavra \"mas\" estabelece uma relação de:",
+        "options": ["adição", "oposição", "causa", "tempo"],
+        "correct": 1
+      },
+      {
+        "text": "\"Estudou bastante, porém não teve a nota que esperava.\" A palavra \"porém\" estabelece uma relação de:",
+        "options": ["adição", "oposição", "causa", "finalidade"],
+        "correct": 1
+      },
+      {
+        "text": "\"Não saiu de casa, pois estava chovendo muito.\" A palavra \"pois\" indica uma relação de:",
+        "options": ["oposição", "causa", "tempo", "condição"],
+        "correct": 1
+      }
+    ],
+    "LC_Q3A": [
+      {
+        "text": "Em uma resenha crítica, o autor escreve: \"o filme não convence, embora tente\". Essa construção concessiva serve para:",
+        "options": ["reforçar sem ressalvas a opinião positiva do autor", "reconhecer um esforço da obra e, ainda assim, manter uma avaliação negativa", "negar qualquer intenção do diretor do filme", "comparar o filme a outra obra do mesmo gênero"],
+        "correct": 1
+      },
+      {
+        "text": "Resenha: \"O restaurante impressiona pelo ambiente, ainda que o atendimento deixe a desejar.\" A conjunção concessiva \"ainda que\" serve para:",
+        "options": ["anular completamente o elogio feito ao ambiente", "reconhecer uma qualidade e, mesmo assim, apontar uma falha", "comparar o restaurante com outro estabelecimento", "negar que o atendimento tenha sido avaliado"],
+        "correct": 1
+      },
+      {
+        "text": "\"O projeto é ambicioso, conquanto viável.\" O uso de \"conquanto\" indica que o autor:",
+        "options": ["considera o projeto inviável apesar da ambição", "reconhece a ambição do projeto sem descartar sua viabilidade", "afirma que ambição e viabilidade são a mesma coisa", "rejeita integralmente a proposta apresentada"],
+        "correct": 1
+      }
+    ],
+    "LC_Q3B": [
+      {
+        "text": "Em um texto publicitário, a frase \"Beba com moderação. Ou não beba nada\" usa como recurso principal:",
+        "options": ["a rima", "a gradação de sentido", "a aliteração", "a metáfora"],
+        "correct": 1
+      },
+      {
+        "text": "\"Ligue agora. Ou melhor, ligue já.\" Essa construção usa como recurso principal:",
+        "options": ["a rima", "a gradação de urgência", "a aliteração", "a metáfora"],
+        "correct": 1
+      },
+      {
+        "text": "\"Economize um pouco. Economize muito. Economize sempre.\" O recurso predominante nessa sequência é:",
+        "options": ["a comparação", "a gradação", "a ironia", "o eufemismo"],
+        "correct": 1
+      }
+    ],
+    "LC_Q3C": [
+      {
+        "text": "A frase \"Se estudar, passa\" está na ordem direta. Reescrita como \"Passa, se estudar\", o sentido lógico da condição:",
+        "options": ["muda completamente", "permanece o mesmo", "vira uma afirmação absoluta", "deixa de ser uma condição"],
+        "correct": 1
+      },
+      {
+        "text": "A frase \"Chove, então a rua alaga\" expressa uma relação de causa e consequência. Reescrita como \"A rua alaga, porque chove\", a relação lógica:",
+        "options": ["se inverte completamente", "permanece a mesma", "deixa de existir", "vira uma condição"],
+        "correct": 1
+      },
+      {
+        "text": "Na frase \"Caso venha, avise-me\", a oração \"caso venha\" expressa uma ideia de:",
+        "options": ["causa", "condição", "tempo", "consequência"],
+        "correct": 1
+      }
+    ],
+    "LC_Q3D": [
+      {
+        "text": "Na frase \"O livro, que estava na estante, caiu\", a oração entre vírgulas serve para:",
+        "options": ["negar uma informação", "acrescentar uma informação sobre o livro", "fazer uma pergunta", "expressar uma ordem"],
+        "correct": 1
+      },
+      {
+        "text": "Na frase \"Minha irmã, que mora em outra cidade, vem nos visitar\", a oração entre vírgulas serve para:",
+        "options": ["negar uma informação sobre a irmã", "acrescentar uma informação sobre a irmã", "expressar uma dúvida", "fazer um pedido"],
+        "correct": 1
+      },
+      {
+        "text": "Na frase \"O professor, que é muito exigente, elogiou o trabalho\", a oração entre vírgulas tem função:",
+        "options": ["explicativa", "condicional", "comparativa", "temporal"],
+        "correct": 0
+      }
+    ]
+  },
+  "MT": {
+    "MT_Q1": [
+      {
+        "text": "Uma loja aumenta um produto de R$ 80 em 15% e, no mês seguinte, dá um desconto de 15% sobre o novo preço. O preço final é:",
+        "options": ["igual a R$ 80", "maior que R$ 80", "menor que R$ 80", "impossível calcular sem mais dados"],
+        "correct": 2
+      },
+      {
+        "text": "Um produto de R$ 100 sofre um desconto de 20% e, em seguida, um aumento de 20% sobre o novo valor. O preço final é:",
+        "options": ["igual a R$ 100", "maior que R$ 100", "menor que R$ 100", "impossível calcular sem mais dados"],
+        "correct": 2
+      },
+      {
+        "text": "Se um valor aumenta 10% e depois mais 10% sobre o novo total, o aumento acumulado é:",
+        "options": ["exatamente 20%", "exatamente 19%", "exatamente 21%", "exatamente 22%"],
+        "correct": 2
+      }
+    ],
+    "MT_Q2A": [
+      {
+        "text": "Uma urna tem 4 bolas vermelhas e 6 azuis. Retirando duas bolas sem reposição, a probabilidade de as duas serem vermelhas é:",
+        "options": ["4/15", "2/15", "6/25", "1/5"],
+        "correct": 1
+      },
+      {
+        "text": "Uma caixa tem 5 bolas brancas e 5 pretas. Ao retirar duas bolas sem reposição, a probabilidade de ambas serem brancas é:",
+        "options": ["1/5", "2/9", "1/4", "5/9"],
+        "correct": 1
+      },
+      {
+        "text": "Um baralho reduzido tem 3 cartas vermelhas e 7 azuis. Retirando duas cartas sem reposição, a probabilidade de as duas serem vermelhas é:",
+        "options": ["1/15", "3/10", "1/10", "2/15"],
+        "correct": 0
+      }
+    ],
+    "MT_Q2B": [
+      {
+        "text": "Se 3 operários fazem um muro em 8 dias, mantendo a mesma produtividade, 6 operários fariam o mesmo muro em:",
+        "options": ["16 dias", "4 dias", "8 dias", "2 dias"],
+        "correct": 1
+      },
+      {
+        "text": "Se 4 máquinas produzem certa quantidade de peças em 12 horas, mantendo o ritmo, 8 máquinas produziriam a mesma quantidade em:",
+        "options": ["24 horas", "6 horas", "3 horas", "16 horas"],
+        "correct": 1
+      },
+      {
+        "text": "5 pintores pintam uma casa em 6 dias. Trabalhando no mesmo ritmo, 10 pintores pintariam a mesma casa em:",
+        "options": ["12 dias", "3 dias", "6 dias", "2 dias"],
+        "correct": 1
+      }
+    ],
+    "MT_Q3A": [
+      {
+        "text": "O gráfico de uma função f(x) = ax² + bx + c tem concavidade para baixo e duas raízes reais distintas. Pode-se concluir que:",
+        "options": ["a > 0 e o discriminante é negativo", "a < 0 e o discriminante é positivo", "a < 0 e o discriminante é zero", "a = 0 e a função não é quadrática"],
+        "correct": 1
+      },
+      {
+        "text": "O gráfico de f(x) = ax² + bx + c tem concavidade para cima e não intercepta o eixo x. Pode-se concluir que:",
+        "options": ["a > 0 e o discriminante é negativo", "a < 0 e o discriminante é positivo", "a > 0 e o discriminante é zero", "a < 0 e o discriminante é negativo"],
+        "correct": 0
+      },
+      {
+        "text": "Uma função quadrática tem concavidade para cima e uma única raiz real (raiz dupla). Isso significa que:",
+        "options": ["a > 0 e o discriminante é positivo", "a > 0 e o discriminante é igual a zero", "a < 0 e o discriminante é igual a zero", "a < 0 e o discriminante é negativo"],
+        "correct": 1
+      }
+    ],
+    "MT_Q3B": [
+      {
+        "text": "Em uma progressão aritmética, o 1º termo é 5 e a razão é 3. O 10º termo vale:",
+        "options": ["32", "35", "30", "38"],
+        "correct": 0
+      },
+      {
+        "text": "Em uma progressão aritmética, o 1º termo é 10 e a razão é -2. O 8º termo vale:",
+        "options": ["-4", "-2", "4", "-6"],
+        "correct": 0
+      },
+      {
+        "text": "Numa PA de razão 5 e primeiro termo 2, o 6º termo é:",
+        "options": ["27", "22", "32", "17"],
+        "correct": 0
+      }
+    ],
+    "MT_Q3C": [
+      {
+        "text": "Uma caixa d'água de 1000 litros está com 40% de sua capacidade. Quantos litros faltam para enchê-la?",
+        "options": ["400 litros", "600 litros", "560 litros", "500 litros"],
+        "correct": 1
+      },
+      {
+        "text": "Uma piscina de 5000 litros está com 30% de sua capacidade. Quantos litros faltam para enchê-la?",
+        "options": ["3500 litros", "1500 litros", "3000 litros", "4000 litros"],
+        "correct": 0
+      },
+      {
+        "text": "Um tanque de 800 litros está com 75% de sua capacidade. Quantos litros ainda cabem?",
+        "options": ["600 litros", "200 litros", "300 litros", "150 litros"],
+        "correct": 1
+      }
+    ],
+    "MT_Q3D": [
+      {
+        "text": "Metade de um número somado a 10 é igual a 20. Esse número é:",
+        "options": ["10", "15", "20", "30"],
+        "correct": 2
+      },
+      {
+        "text": "O triplo de um número, diminuído de 4, é igual a 11. Esse número é:",
+        "options": ["3", "4", "5", "6"],
+        "correct": 2
+      },
+      {
+        "text": "Um número somado ao seu dobro é igual a 27. Esse número é:",
+        "options": ["7", "8", "9", "10"],
+        "correct": 2
+      }
+    ]
+  }
+}
