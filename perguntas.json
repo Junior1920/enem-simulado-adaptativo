@@ -240,5 +240,248 @@
         "correct": 2
       }
     ]
+  },
+  "CH": {
+    "CH_Q1": [
+      {
+        "text": "Um geógrafo afirma que \"a cidade contemporânea segrega no espaço aquilo que a sociedade já segrega socialmente\". Essa frase sugere que a organização urbana:",
+        "options": ["é resultado apenas de decisões técnicas de engenharia, sem relação com desigualdades sociais", "reflete e reforça desigualdades sociais já existentes", "elimina progressivamente as diferenças entre classes sociais", "depende exclusivamente do relevo natural da região"],
+        "correct": 1
+      },
+      {
+        "text": "Um cientista político afirma que \"o voto é necessário, mas não suficiente, para garantir cidadania plena\". Essa afirmação sugere que a cidadania:",
+        "options": ["se resume ao direito de votar em eleições", "envolve também acesso a direitos sociais, civis e econômicos, além do direito político", "é garantida automaticamente pelo nascimento em um país democrático", "depende apenas da idade mínima estabelecida por lei"],
+        "correct": 1
+      },
+      {
+        "text": "Um historiador afirma que \"nenhum processo histórico é resultado de uma única causa isolada\". Essa ideia se opõe à visão de que a história:",
+        "options": ["é construída por múltiplos fatores econômicos, sociais e políticos combinados", "pode ser explicada por uma causa única e determinante em cada evento", "não possui nenhuma relação de causa e efeito", "é decidida exclusivamente por grandes líderes individuais"],
+        "correct": 1
+      }
+    ],
+    "CH_Q2A": [
+      {
+        "text": "Um sociólogo descreve que, em sociedades de consumo, \"compra-se não apenas o produto, mas o significado social que ele carrega\". Essa ideia dialoga com o conceito de:",
+        "options": ["valor de uso exclusivamente material dos bens", "valor simbólico atribuído às mercadorias pela sociedade", "ausência total de influência cultural no consumo", "igualdade de acesso a bens de consumo em qualquer classe social"],
+        "correct": 1
+      },
+      {
+        "text": "Um filósofo político argumenta que \"a liberdade de uns termina quando fere a liberdade de outros\". Esse princípio está mais associado à ideia de:",
+        "options": ["liberdade absoluta e sem limites para o indivíduo", "liberdade como conceito relacional, limitada pelo direito alheio", "ausência de qualquer regra em sociedade", "liberdade exclusivamente econômica, sem dimensão social"],
+        "correct": 1
+      },
+      {
+        "text": "Um antropólogo afirma que \"compreender uma cultura exige suspender, ainda que temporariamente, os próprios valores para entender a lógica interna do outro\". Esse princípio está associado à ideia de:",
+        "options": ["etnocentrismo, avaliação de outras culturas pelos próprios padrões", "relativismo cultural, compreensão de cada cultura em seus próprios termos", "superioridade cultural de sociedades urbanas", "ausência de qualquer diferença entre culturas humanas"],
+        "correct": 1
+      }
+    ],
+    "CH_Q2B": [
+      {
+        "text": "O conjunto de regras que organiza a vida em sociedade e é imposto pelo Estado é conhecido como:",
+        "options": ["cultura", "direito", "economia", "religião"],
+        "correct": 1
+      },
+      {
+        "text": "A divisão do trabalho em que cada indivíduo se especializa em uma tarefa específica é característica de sociedades:",
+        "options": ["isoladas e sem contato externo", "com maior complexidade econômica e industrial", "sem nenhuma organização social", "exclusivamente rurais"],
+        "correct": 1
+      },
+      {
+        "text": "O processo de transferência de população do campo para as cidades é chamado de:",
+        "options": ["êxodo rural", "reforma agrária", "urbanização reversa", "colonização"],
+        "correct": 0
+      }
+    ],
+    "CH_Q3A": [
+      {
+        "text": "Um cientista social descreve que \"a globalização aproxima mercados, mas nem sempre aproxima culturas da mesma forma\". Essa afirmação sugere que a globalização:",
+        "options": ["ocorre de forma homogênea em todas as dimensões da vida social", "pode gerar integração econômica sem integração cultural equivalente", "elimina completamente as identidades culturais locais", "afeta apenas países de economia menos desenvolvida"],
+        "correct": 1
+      },
+      {
+        "text": "Um filósofo argumenta que \"toda lei injusta ainda é uma lei, mas isso não a torna moralmente correta\". Essa reflexão distingue:",
+        "options": ["legalidade e moralidade como conceitos idênticos", "legalidade (o que é conforme a lei) e legitimidade moral (o que é justo)", "a inexistência de qualquer relação entre lei e ética", "que leis injustas automaticamente deixam de valer"],
+        "correct": 1
+      },
+      {
+        "text": "Um historiador afirma que \"toda memória histórica é também uma escolha sobre o que esquecer\". Essa ideia sugere que a narrativa histórica:",
+        "options": ["é sempre neutra e completa, sem nenhuma seleção", "envolve seleção e interpretação de fatos, não apenas registro neutro", "depende exclusivamente de documentos oficiais do Estado", "é idêntica em qualquer sociedade, independente do contexto"],
+        "correct": 1
+      }
+    ],
+    "CH_Q3B": [
+      {
+        "text": "O modelo econômico em que o Estado controla a maior parte dos meios de produção é chamado de:",
+        "options": ["liberalismo", "socialismo de Estado", "livre mercado puro", "economia informal"],
+        "correct": 1
+      },
+      {
+        "text": "A Revolução Industrial teve como uma de suas principais consequências sociais:",
+        "options": ["a redução do êxodo rural", "o crescimento das cidades e da classe operária", "o fim do trabalho assalariado", "a extinção das fábricas"],
+        "correct": 1
+      },
+      {
+        "text": "O conceito de \"cidadania\" nas democracias modernas está mais associado a:",
+        "options": ["obediência incondicional ao governo", "direitos e deveres compartilhados entre indivíduo e Estado", "ausência total de regras sociais", "benefícios exclusivos para uma classe social"],
+        "correct": 1
+      }
+    ],
+    "CH_Q3C": [
+      {
+        "text": "A diferença entre \"Estado\" e \"governo\" é que:",
+        "options": ["são sinônimos e não há diferença", "o Estado é permanente e o governo muda periodicamente", "o governo é permanente e o Estado muda periodicamente", "o Estado só existe em monarquias"],
+        "correct": 1
+      },
+      {
+        "text": "O conceito de \"desenvolvimento sustentável\" busca equilibrar:",
+        "options": ["crescimento econômico e preservação ambiental", "apenas o crescimento econômico, sem outras considerações", "apenas a preservação ambiental, sem crescimento", "crescimento populacional e urbanização"],
+        "correct": 0
+      },
+      {
+        "text": "A \"divisão internacional do trabalho\" se refere a:",
+        "options": ["cada país produzir apenas para seu próprio consumo interno", "diferentes países se especializarem em diferentes etapas ou tipos de produção", "a proibição do comércio entre países", "todos os países produzirem os mesmos bens"],
+        "correct": 1
+      }
+    ],
+    "CH_Q3D": [
+      {
+        "text": "O documento que reúne as principais leis de um país e organiza seu funcionamento político é a:",
+        "options": ["Constituição", "Declaração de renda", "Ata notarial", "Certidão pública"],
+        "correct": 0
+      },
+      {
+        "text": "O sistema de governo em que o poder é dividido entre diferentes esferas (federal, estadual, municipal) é chamado de:",
+        "options": ["unitarismo", "federalismo", "monarquia absoluta", "anarquismo"],
+        "correct": 1
+      },
+      {
+        "text": "Um país que realiza eleições periódicas e livres, com alternância de poder, é caracterizado como:",
+        "options": ["uma ditadura", "uma democracia", "uma monarquia absoluta", "um Estado sem governo"],
+        "correct": 1
+      }
+    ]
+  },
+  "CN": {
+    "CN_Q1": [
+      {
+        "text": "Durante a fotossíntese, uma planta consome CO2 e libera O2; durante a respiração celular, ela consome O2 e libera CO2. Isso mostra que, numa planta:",
+        "options": ["apenas um dos dois processos ocorre por vez, nunca simultaneamente", "os dois processos podem ocorrer ao mesmo tempo, com trocas gasosas em direções opostas", "a respiração celular só ocorre à noite, exclusivamente", "a fotossíntese elimina totalmente a necessidade de respiração celular"],
+        "correct": 1
+      },
+      {
+        "text": "Ao soltar uma bola de uma certa altura, ela cai e acelera até tocar o chão. Esse fenômeno é explicado principalmente pela conversão de energia:",
+        "options": ["elétrica em térmica", "potencial gravitacional em cinética", "química em nuclear", "sonora em luminosa"],
+        "correct": 1
+      },
+      {
+        "text": "Ao aquecer um cubo de gelo até ele virar vapor, a substância passa por mudanças de estado físico que ocorrem, na ordem correta, como:",
+        "options": ["sólido → gasoso → líquido", "líquido → sólido → gasoso", "sólido → líquido → gasoso", "gasoso → líquido → sólido"],
+        "correct": 2
+      }
+    ],
+    "CN_Q2A": [
+      {
+        "text": "Em um cruzamento entre um indivíduo homozigoto dominante (AA) e um homozigoto recessivo (aa), toda a geração F1 será:",
+        "options": ["homozigota recessiva (aa)", "heterozigota (Aa)", "homozigota dominante (AA)", "uma mistura aleatória de genótipos"],
+        "correct": 1
+      },
+      {
+        "text": "Um corpo em repouso permanece em repouso, e um corpo em movimento continua em movimento retilíneo uniforme, a menos que uma força resultante atue sobre ele. Esse princípio é conhecido como:",
+        "options": ["Lei da Gravitação Universal", "Primeira Lei de Newton (Inércia)", "Lei de Ohm", "Princípio de Arquimedes"],
+        "correct": 1
+      },
+      {
+        "text": "Numa reação de combustão completa de um hidrocarboneto, os produtos formados são, tipicamente:",
+        "options": ["apenas água", "apenas gás carbônico", "gás carbônico e água", "apenas oxigênio"],
+        "correct": 2
+      }
+    ],
+    "CN_Q2B": [
+      {
+        "text": "O gás liberado pelas plantas durante a fotossíntese, essencial para a respiração da maioria dos seres vivos, é o:",
+        "options": ["gás carbônico", "oxigênio", "nitrogênio", "hidrogênio"],
+        "correct": 1
+      },
+      {
+        "text": "A unidade básica que forma todos os seres vivos é:",
+        "options": ["o átomo", "a célula", "o tecido", "o órgão"],
+        "correct": 1
+      },
+      {
+        "text": "A força que atrai os objetos em direção ao centro da Terra é chamada de:",
+        "options": ["magnetismo", "gravidade", "atrito", "pressão"],
+        "correct": 1
+      }
+    ],
+    "CN_Q3A": [
+      {
+        "text": "Populações de insetos resistentes a um inseticida se tornam mais comuns após gerações de uso do produto. Esse fenômeno é mais bem explicado pelo conceito de:",
+        "options": ["mutação espontânea que ocorre igualmente em todos os indivíduos após a exposição", "seleção natural, favorecendo indivíduos que já possuíam a característica de resistência", "ausência de qualquer mudança genética na população", "transmissão de características adquiridas durante a vida do inseto"],
+        "correct": 1
+      },
+      {
+        "text": "Em um circuito elétrico simples, ao aumentar a resistência mantendo a tensão constante, de acordo com a Lei de Ohm, a corrente elétrica:",
+        "options": ["aumenta", "diminui", "permanece exatamente igual", "se torna nula instantaneamente"],
+        "correct": 1
+      },
+      {
+        "text": "Uma solução com pH igual a 3 é classificada como:",
+        "options": ["básica", "neutra", "ácida", "impossível de classificar"],
+        "correct": 2
+      }
+    ],
+    "CN_Q3B": [
+      {
+        "text": "O processo pelo qual as células obtêm energia a partir da quebra de moléculas de glicose, consumindo oxigênio, é chamado de:",
+        "options": ["fotossíntese", "respiração celular", "fermentação alcoólica", "osmose"],
+        "correct": 1
+      },
+      {
+        "text": "Um objeto de massa maior exige, para adquirir a mesma aceleração de um objeto mais leve, uma força:",
+        "options": ["menor", "igual", "maior", "nula"],
+        "correct": 2
+      },
+      {
+        "text": "Uma mistura de água e sal pode ser separada por meio de:",
+        "options": ["decantação", "evaporação", "filtração simples", "imantação"],
+        "correct": 1
+      }
+    ],
+    "CN_Q3C": [
+      {
+        "text": "A camada de gases que envolve a Terra e permite a respiração dos seres vivos é chamada de:",
+        "options": ["hidrosfera", "atmosfera", "litosfera", "estratosfera exclusivamente"],
+        "correct": 1
+      },
+      {
+        "text": "Quando um corpo flutua na água, isso ocorre principalmente devido a:",
+        "options": ["ausência total de gravidade na água", "o empuxo exercido pelo líquido sobre o corpo", "o corpo perder massa ao entrar na água", "a água ser eletricamente carregada"],
+        "correct": 1
+      },
+      {
+        "text": "O tipo de ligação química formada pelo compartilhamento de elétrons entre átomos é chamada de:",
+        "options": ["ligação iônica", "ligação covalente", "ligação metálica", "ligação nuclear"],
+        "correct": 1
+      }
+    ],
+    "CN_Q3D": [
+      {
+        "text": "O órgão do corpo humano responsável por bombear o sangue é o:",
+        "options": ["pulmão", "coração", "fígado", "rim"],
+        "correct": 1
+      },
+      {
+        "text": "A água muda do estado líquido para o estado sólido através do processo de:",
+        "options": ["fusão", "solidificação", "evaporação", "sublimação"],
+        "correct": 1
+      },
+      {
+        "text": "O planeta do sistema solar mais próximo do Sol é:",
+        "options": ["Vênus", "Terra", "Mercúrio", "Marte"],
+        "correct": 2
+      }
+    ]
   }
 }
+

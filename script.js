@@ -29,6 +29,32 @@ const NODE_META = {
       MT_Q3C: { tier:"medio",   terminal:true },
       MT_Q3D: { tier:"facil",   terminal:true }
     }
+  },
+  CH: {
+    name: "Ciências Humanas",
+    start: "CH_Q1",
+    nodes: {
+      CH_Q1:  { tier:"medio",   next:{correct:"CH_Q2A", wrong:"CH_Q2B"} },
+      CH_Q2A: { tier:"dificil", next:{correct:"CH_Q3A", wrong:"CH_Q3B"} },
+      CH_Q2B: { tier:"facil",   next:{correct:"CH_Q3C", wrong:"CH_Q3D"} },
+      CH_Q3A: { tier:"dificil", terminal:true },
+      CH_Q3B: { tier:"medio",   terminal:true },
+      CH_Q3C: { tier:"medio",   terminal:true },
+      CH_Q3D: { tier:"facil",   terminal:true }
+    }
+  },
+  CN: {
+    name: "Ciências da Natureza",
+    start: "CN_Q1",
+    nodes: {
+      CN_Q1:  { tier:"medio",   next:{correct:"CN_Q2A", wrong:"CN_Q2B"} },
+      CN_Q2A: { tier:"dificil", next:{correct:"CN_Q3A", wrong:"CN_Q3B"} },
+      CN_Q2B: { tier:"facil",   next:{correct:"CN_Q3C", wrong:"CN_Q3D"} },
+      CN_Q3A: { tier:"dificil", terminal:true },
+      CN_Q3B: { tier:"medio",   terminal:true },
+      CN_Q3C: { tier:"medio",   terminal:true },
+      CN_Q3D: { tier:"facil",   terminal:true }
+    }
   }
 };
 
@@ -51,6 +77,24 @@ const FALLBACK_BANK = {
     MT_Q3B:[{text:"Em uma progressão aritmética, o 1º termo é 5 e a razão é 3. O 10º termo vale:",options:["32","35","30","38"],correct:0}],
     MT_Q3C:[{text:"Uma caixa d'água de 1000 litros está com 40% de sua capacidade. Quantos litros faltam para enchê-la?",options:["400 litros","600 litros","560 litros","500 litros"],correct:1}],
     MT_Q3D:[{text:"Metade de um número somado a 10 é igual a 20. Esse número é:",options:["10","15","20","30"],correct:2}]
+  },
+  CH: {
+    CH_Q1:[{text:"Um geógrafo afirma que \"a cidade contemporânea segrega no espaço aquilo que a sociedade já segrega socialmente\". Essa frase sugere que a organização urbana:",options:["é resultado apenas de decisões técnicas de engenharia, sem relação com desigualdades sociais","reflete e reforça desigualdades sociais já existentes","elimina progressivamente as diferenças entre classes sociais","depende exclusivamente do relevo natural da região"],correct:1}],
+    CH_Q2A:[{text:"Um sociólogo descreve que, em sociedades de consumo, \"compra-se não apenas o produto, mas o significado social que ele carrega\". Essa ideia dialoga com o conceito de:",options:["valor de uso exclusivamente material dos bens","valor simbólico atribuído às mercadorias pela sociedade","ausência total de influência cultural no consumo","igualdade de acesso a bens de consumo em qualquer classe social"],correct:1}],
+    CH_Q2B:[{text:"O conjunto de regras que organiza a vida em sociedade e é imposto pelo Estado é conhecido como:",options:["cultura","direito","economia","religião"],correct:1}],
+    CH_Q3A:[{text:"Um cientista social descreve que \"a globalização aproxima mercados, mas nem sempre aproxima culturas da mesma forma\". Essa afirmação sugere que a globalização:",options:["ocorre de forma homogênea em todas as dimensões da vida social","pode gerar integração econômica sem integração cultural equivalente","elimina completamente as identidades culturais locais","afeta apenas países de economia menos desenvolvida"],correct:1}],
+    CH_Q3B:[{text:"O modelo econômico em que o Estado controla a maior parte dos meios de produção é chamado de:",options:["liberalismo","socialismo de Estado","livre mercado puro","economia informal"],correct:1}],
+    CH_Q3C:[{text:"A diferença entre \"Estado\" e \"governo\" é que:",options:["são sinônimos e não há diferença","o Estado é permanente e o governo muda periodicamente","o governo é permanente e o Estado muda periodicamente","o Estado só existe em monarquias"],correct:1}],
+    CH_Q3D:[{text:"O documento que reúne as principais leis de um país e organiza seu funcionamento político é a:",options:["Constituição","Declaração de renda","Ata notarial","Certidão pública"],correct:0}]
+  },
+  CN: {
+    CN_Q1:[{text:"Durante a fotossíntese, uma planta consome CO2 e libera O2; durante a respiração celular, ela consome O2 e libera CO2. Isso mostra que, numa planta:",options:["apenas um dos dois processos ocorre por vez, nunca simultaneamente","os dois processos podem ocorrer ao mesmo tempo, com trocas gasosas em direções opostas","a respiração celular só ocorre à noite, exclusivamente","a fotossíntese elimina totalmente a necessidade de respiração celular"],correct:1}],
+    CN_Q2A:[{text:"Em um cruzamento entre um indivíduo homozigoto dominante (AA) e um homozigoto recessivo (aa), toda a geração F1 será:",options:["homozigota recessiva (aa)","heterozigota (Aa)","homozigota dominante (AA)","uma mistura aleatória de genótipos"],correct:1}],
+    CN_Q2B:[{text:"O gás liberado pelas plantas durante a fotossíntese, essencial para a respiração da maioria dos seres vivos, é o:",options:["gás carbônico","oxigênio","nitrogênio","hidrogênio"],correct:1}],
+    CN_Q3A:[{text:"Populações de insetos resistentes a um inseticida se tornam mais comuns após gerações de uso do produto. Esse fenômeno é mais bem explicado pelo conceito de:",options:["mutação espontânea que ocorre igualmente em todos os indivíduos após a exposição","seleção natural, favorecendo indivíduos que já possuíam a característica de resistência","ausência de qualquer mudança genética na população","transmissão de características adquiridas durante a vida do inseto"],correct:1}],
+    CN_Q3B:[{text:"O processo pelo qual as células obtêm energia a partir da quebra de moléculas de glicose, consumindo oxigênio, é chamado de:",options:["fotossíntese","respiração celular","fermentação alcoólica","osmose"],correct:1}],
+    CN_Q3C:[{text:"A camada de gases que envolve a Terra e permite a respiração dos seres vivos é chamada de:",options:["hidrosfera","atmosfera","litosfera","estratosfera exclusivamente"],correct:1}],
+    CN_Q3D:[{text:"O órgão do corpo humano responsável por bombear o sangue é o:",options:["pulmão","coração","fígado","rim"],correct:1}]
   }
 };
 
@@ -70,9 +114,27 @@ const LEVELS_MT = {
   facil_correct:   {...LEVELS.facil_correct, tip:"Revise regra de três e porcentagem com calma — é a base de boa parte das questões de Matemática do Enem."},
   facil_wrong:     {...LEVELS.facil_wrong, tip:"Comece pelo básico: porcentagem e proporção. Sem essa base, o resto fica mais difícil de acompanhar."}
 };
+const LEVELS_CH = {
+  dificil_correct: {...LEVELS.dificil_correct, tip:"Você já vai bem em Ciências Humanas — treine questões que cruzam conceitos de sociologia, filosofia e história no mesmo enunciado."},
+  dificil_wrong:   {...LEVELS.dificil_wrong, tip:"Revise conceitos-chave de sociologia e filosofia (cidadania, ideologia, relativismo cultural) — aparecem bastante nas questões mais conceituais."},
+  medio_correct:   {...LEVELS.medio_correct, tip:"Revise conceitos-chave de sociologia e filosofia (cidadania, ideologia, relativismo cultural) — aparecem bastante nas questões mais conceituais."},
+  medio_wrong:     {...LEVELS.medio_wrong, tip:"Reforce conceitos básicos de política e economia (Estado, governo, globalização) antes de avançar pros temas mais abstratos."},
+  facil_correct:   {...LEVELS.facil_correct, tip:"Reforce conceitos básicos de política e economia (Estado, governo, globalização) antes de avançar pros temas mais abstratos."},
+  facil_wrong:     {...LEVELS.facil_wrong, tip:"Volte aos conceitos mais básicos de cidadania, Estado e sociedade — são a base pra entender o resto de Ciências Humanas."}
+};
+const LEVELS_CN = {
+  dificil_correct: {...LEVELS.dificil_correct, tip:"Você já vai bem em Ciências da Natureza — treine questões que exigem aplicar mais de uma lei ou conceito ao mesmo tempo."},
+  dificil_wrong:   {...LEVELS.dificil_wrong, tip:"Revise leis fundamentais de física e química (Newton, Ohm, reações) — são a base das questões mais difíceis dessa área."},
+  medio_correct:   {...LEVELS.medio_correct, tip:"Revise leis fundamentais de física e química (Newton, Ohm, reações) — são a base das questões mais difíceis dessa área."},
+  medio_wrong:     {...LEVELS.medio_wrong, tip:"Reforce processos básicos (respiração celular, mudanças de estado físico, ligações químicas) antes de avançar pros conceitos mais complexos."},
+  facil_correct:   {...LEVELS.facil_correct, tip:"Reforce processos básicos (respiração celular, mudanças de estado físico, ligações químicas) antes de avançar pros conceitos mais complexos."},
+  facil_wrong:     {...LEVELS.facil_wrong, tip:"Volte ao básico de biologia, física e química do dia a dia — é a base pra entender o resto de Ciências da Natureza."}
+};
+
+const LEVELS_BY_AREA = { LC: LEVELS, MT: LEVELS_MT, CH: LEVELS_CH, CN: LEVELS_CN };
 
 let TREE = null;
-let areaOrder = ["LC","MT"];
+let areaOrder = ["LC","MT","CH","CN"];
 let areaIdx = 0;
 let currentNodeKey = null;
 let results = {};
@@ -147,8 +209,8 @@ async function carregarBanco(){
   el("begin-btn").disabled = false;
   const d = diasAteProva();
   el("hint-text").textContent = d > 0
-    ? `${d} dias até a prova · leva cerca de 6 minutos`
-    : `leva cerca de 6 minutos`;
+    ? `${d} dias até a prova · leva cerca de 12 minutos`
+    : `leva cerca de 12 minutos`;
 }
 carregarBanco();
 
@@ -217,7 +279,7 @@ function selectOption(i, node, row){
     if(node.terminal){
       const key = node.tier + "_" + (isCorrect ? "correct" : "wrong");
       const areaKey = areaOrder[areaIdx];
-      const table = areaKey === "MT" ? LEVELS_MT : LEVELS;
+      const table = LEVELS_BY_AREA[areaKey];
       results[areaKey] = table[key];
       areaIdx++;
       if(areaIdx < areaOrder.length){
@@ -406,7 +468,8 @@ function renderBoletim(r){
     "C4 · Coesão textual": "Grife todo início de parágrafo e force o uso de um conectivo diferente em cada um.",
     "C5 · Proposta de intervenção": "Treine escrever a proposta com essa estrutura fixa: quem faz + o que faz + como faz + para quê."
   };
-  const areaFracaKey = results.LC.pct <= results.MT.pct ? "LC" : "MT";
+  const areaFracaKey = areaOrder.reduce((minKey, key) =>
+    results[key].pct < results[minKey].pct ? key : minKey, areaOrder[0]);
   const areaFraca = results[areaFracaKey];
   const dias = diasAteProva();
 
