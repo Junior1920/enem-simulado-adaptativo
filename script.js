@@ -460,7 +460,9 @@ function renderBoletim(r){
     compsEl.appendChild(row);
   });
 
-  const compFraca = comps.reduce((min,c)=> c.score < min.score ? c : min, comps[0]);
+  const compsSorted = [...comps].sort((a,b)=>a.score-b.score);
+  const compFraca = compsSorted[0];
+  const compSegunda = compsSorted[1];
   const tipsPorComp = {
     "C1 · Domínio da norma culta": "Releia seu texto em voz alta procurando gírias e abreviações — troque por versões formais.",
     "C2 · Compreensão do tema": "Escolha 1 dado, autor ou fato concreto e treine explicar em 1 frase por que ele tem a ver com o tema.",
@@ -468,26 +470,129 @@ function renderBoletim(r){
     "C4 · Coesão textual": "Grife todo início de parágrafo e force o uso de um conectivo diferente em cada um.",
     "C5 · Proposta de intervenção": "Treine escrever a proposta com essa estrutura fixa: quem faz + o que faz + como faz + para quê."
   };
-  const areaFracaKey = areaOrder.reduce((minKey, key) =>
-    results[key].pct < results[minKey].pct ? key : minKey, areaOrder[0]);
-  const areaFraca = results[areaFracaKey];
-  const dias = diasAteProva();
+  const compCurto = nome => nome.split(" · ")[1] || nome;
 
-  const planoItens = [
-    tipsPorComp[compFraca.name],
-    areaFraca.tip,
-    dias > 0 ? `Faltam ${dias} dias — reserve pelo menos um deles só pra reescrever esta redação aplicando os pontos acima.` : "Reserve um tempo só pra reescrever esta redação aplicando os pontos acima."
-  ];
+  const areasOrdenadas = [...areaOrder].sort((a,b) => results[a].pct - results[b].pct);
+  const areaFracaKey = areasOrdenadas[0];
+  const areaSegundaKey = areasOrdenadas[1];
+  const areaFraca = results[areaFracaKey];
+  const areaSegunda = results[areaSegundaKey];
+  const nomeAreaFraca = TREE[areaFracaKey].name;
+  const nomeAreaSegunda = TREE[areaSegundaKey].name;
+
+  const dias = diasAteProva();
+  const fases = gerarCronograma({
+    dias, compFraca, compSegunda, tipsPorComp, compCurto,
+    areaFraca, areaSegunda, nomeAreaFraca, nomeAreaSegunda
+  });
+
   const planoEl = el("plano-acao");
   planoEl.innerHTML = "";
-  planoItens.forEach((item, i)=>{
-    const row = document.createElement("div");
-    row.className = "plano-item";
-    row.innerHTML = `<span class="plano-num">${i+1}.</span><span>${item}</span>`;
-    planoEl.appendChild(row);
+  fases.forEach(fase => {
+    const block = document.createElement("div");
+    block.className = "phase-block";
+    const itensHtml = fase.itens.map(item =>
+      `<div class="phase-item"><span class="phase-item-mark">—</span><span>${item}</span></div>`
+    ).join("");
+    block.innerHTML = `
+      <div class="phase-top">
+        <span class="phase-title">${fase.titulo}</span>
+        <span class="phase-days">${fase.periodo}</span>
+      </div>
+      <div class="phase-items">${itensHtml}</div>
+    `;
+    planoEl.appendChild(block);
   });
 
   goTo("screen-boletim", "boletim");
+}
+
+function gerarCronograma({dias, compFraca, compSegunda, tipsPorComp, compCurto, areaFraca, areaSegunda, nomeAreaFraca, nomeAreaSegunda}){
+  const tipComp1 = tipsPorComp[compFraca.name];
+  const tipComp2 = tipsPorComp[compSegunda.name];
+
+  if(dias <= 0){
+    return [{
+      titulo: "Reta final",
+      periodo: "agora",
+      itens: [
+        `Foque só em revisão leve: ${compCurto(compFraca.name)} na redação e ${nomeAreaFraca.toLowerCase()} no conteúdo.`,
+        "Evite conteúdo novo a essa altura — reforço de última hora rende menos que estar descansado.",
+        "Durma bem na véspera. Isso importa mais do que mais uma hora de estudo agora."
+      ]
+    }];
+  }
+
+  if(dias <= 6){
+    return [{
+      titulo: "Reta final",
+      periodo: `${dias} dia${dias>1?"s":""}`,
+      itens: [
+        `${tipComp1}`,
+        `${areaFraca.tip}`,
+        "Faça no máximo 1 simulado curto nesse período — o resto do tempo é pra revisar erro, não acumular conteúdo novo.",
+        "Reserve o último dia só pra descanso, sem estudar."
+      ]
+    }];
+  }
+
+  if(dias <= 16){
+    const p1 = Math.max(4, Math.round(dias*0.6));
+    const p2 = dias - p1;
+    return [
+      {
+        titulo: "Fase 1 · Fundamentos",
+        periodo: `Dias 1–${p1}`,
+        itens: [
+          `Redação: ${tipComp1}`,
+          `${nomeAreaFraca}: ${areaFraca.tip}`,
+          "Reserve pelo menos 3 sessões de 40-50 minutos por semana só pra esses dois pontos."
+        ]
+      },
+      {
+        titulo: "Fase 2 · Reta final",
+        periodo: `Dias ${p1+1}–${dias}`,
+        itens: [
+          "Faça 1-2 simulados completos, cronometrados, nas condições reais de prova.",
+          "Revise os erros mais frequentes das fases anteriores — não conteúdo novo.",
+          "Nos últimos 2 dias, descanse. É mais estratégico do que estudar até a véspera."
+        ]
+      }
+    ];
+  }
+
+  const p1 = Math.max(5, Math.round(dias*0.40));
+  const p2 = Math.max(5, Math.round(dias*0.35));
+  const p3 = Math.max(3, dias - p1 - p2);
+  return [
+    {
+      titulo: "Fase 1 · Fundamentos",
+      periodo: `Dias 1–${p1}`,
+      itens: [
+        `Redação: ${tipComp1}`,
+        `${nomeAreaFraca}: ${areaFraca.tip}`,
+        "Reserve pelo menos 3 sessões de 40-50 minutos por semana só pra esses dois pontos."
+      ]
+    },
+    {
+      titulo: "Fase 2 · Consolidação",
+      periodo: `Dias ${p1+1}–${p1+p2}`,
+      itens: [
+        `Inclua ${nomeAreaSegunda.toLowerCase()}: ${areaSegunda.tip}`,
+        `Na redação, trabalhe também ${compCurto(compSegunda.name)}: ${tipComp2}`,
+        "Escreva pelo menos 1 redação completa por semana, aplicando os pontos da Fase 1."
+      ]
+    },
+    {
+      titulo: "Fase 3 · Reta final",
+      periodo: `Dias ${p1+p2+1}–${dias}`,
+      itens: [
+        "Faça 1-2 simulados completos, cronometrados, nas condições reais de prova.",
+        "Revise os erros mais frequentes das fases anteriores — não conteúdo novo.",
+        "Nos últimos 2 dias, descanse. É mais estratégico do que estudar até a véspera."
+      ]
+    }
+  ];
 }
 
 function restart(){
